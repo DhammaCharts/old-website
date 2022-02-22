@@ -1,7 +1,7 @@
 .container {
 	display: block;
 	margin: 0 auto;
-	// max-width: 70em;
+	max-width: 70em;
 	padding: 0 3rem;
 	@include clearfix;
 }
@@ -13,12 +13,10 @@
 
 .logo {
 	float: right;
-	font-size: 3rem;
+	font-size: 1.8rem;
 	font-weight: 600;
 	margin: 0;
 	line-height: 1;
-	position: relative;
-	z-index: 9999;
 }
 
 .nav {
@@ -31,7 +29,7 @@
 
 .content {
 	background: $color-white;
-	padding: 10rem 0 10rem;
+	padding: 2rem 0 0;
 	// margin-bottom: 31.24rem;
 	position: relative;
 	top: 0;
@@ -39,7 +37,21 @@
 	z-index: 1;
 
 	@media (min-width: $breakpoint-medium) {
-		padding:  10rem 0 10rem;
+		padding: 21rem 0 0;
+		// margin-bottom: 23.42rem;
+	}
+}
+.home {
+	background: $color-white;
+	padding: 2rem 0 0;
+	// margin-bottom: 31.24rem;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	@media (min-width: $breakpoint-medium) {
+		padding: 7rem 0 0;
 		// margin-bottom: 23.42rem;
 	}
 }
@@ -233,7 +245,7 @@
 }
 
 .project-navigation {
-	background: $color-black;
+	// background: $color-black;
 	padding: 5rem 0;
 
 	a {
