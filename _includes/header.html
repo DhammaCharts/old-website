@@ -1,7 +1,21 @@
 <header class="header">
-	<div class="container">
+	{% if site.art == true %}
+	<div class="container blackhead">
 		<h1 class="logo">
-			<a title="{{ site.author }}" href="{{ site.baseurl | append: "/" }}">{{ site.author }}</a>
+			<a title="{{ site.author }}" href="{{ site.baseurl | append: "/" }}">{{ site.author }}</a> | <a class="rouge" href="/indexRouge.html"> Art </a>
 		</h1>
 	</div>
+	<div class="container rougehead">
+		<h1 class="logo">
+			<a class="rouge" href="/indexRouge.html"> DhammaArt </a><span class="black"> | </span><a class="black" title="{{ site.author }}" href="{{ site.baseurl | append: "/" }}">Charts</a>
+			<!-- <a class="black" title="{{ site.author }}" href="{{ site.baseurl | append: "/" }}">Charts</a><span class="black"> | </span><a class="rouge" href="/indexRouge.html"> DhammaArt </a> -->
+		</h1>
+	</div>
+	{% else %}
+	<div class="container blackhead">
+		<h1 class="logo">
+			<a title="{{ site.author }}" href="{{ site.baseurl | append: "/" }}">{{ site.author }}</a><span class="black"> | </span><a class="rouge" title="{{ site.author }}" href="{{ site.baseurl | append: "/links.html" }}">links</a>
+		</h1>
+	</div>
+	{% endif %}
 </header>

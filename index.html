@@ -11,11 +11,21 @@
 	{% include head.html %}
 </head>
 
-<body>
+<body class="black">
 	{% include header.html %}
 	<main class="home">
 		{% for category in site.categories %}
 		{% capture category_name %}{{ category | first }}{% endcapture %}
+
+		{% assign charts = true %}
+
+		{% for item in site.categories[category_name]  %}
+		{% if item.side == "Art" %}
+		{% assign charts = false %}
+		{% endif %}
+		{% endfor %}
+
+		{% if charts == true %}
 		<section class="projects">
 			<div class="container">
 				<h1 class="projects">{{ category_name }}</h1>
@@ -35,9 +45,9 @@
 				</ul>
 			</div>
 		</section>
+		{% endif %}
 
 		{% endfor %}
-
 	</main>
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>

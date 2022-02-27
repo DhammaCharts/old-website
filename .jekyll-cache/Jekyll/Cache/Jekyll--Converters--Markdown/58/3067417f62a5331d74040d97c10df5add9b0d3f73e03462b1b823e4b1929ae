@@ -1,0 +1,75 @@
+I"@<div class="flex-container">
+<div class="flex-left">
+
+<div style="clear: both; width:300px display:flex">
+  <div style="float: left; margin-right: 2rem; margin-bottom: 5rem"><a href="https://observablehq.com/@sugi2000/charts-of-chart-types">
+      <img src="assets/images/links/chartsofchart.png" alt="" width="200px" /></a>
+  </div>
+  <div>
+    <h2>CHARTS of charts</h2>
+    <p>List of all charts possible</p>
+
+  </div>
+</div>
+
+<div style="clear: both; width:300px display:flex">
+  <div style="float: left; margin-right: 2rem; margin-bottom: 5rem"><a href="https://rasterbator.net/">
+      <img src="assets/images/links/chat.jpeg" alt="" width="200px" /></a>
+  </div>
+  <div>
+    <h2>The Rasterbator</h2>
+    <p>Print any size by yourself</p>
+
+  </div>
+</div>
+
+<div style="clear: both; width:300px display:flex">
+  <div style="float: left; margin-right: 2rem; margin-bottom: 5rem"><a href="https://usefulcharts.com/">
+      <img src="assets/images/links/useful.png" alt="" width="200px" /></a>
+  </div>
+  <div>
+    <h2>Usefulcharts</h2>
+    <p>A good website</p>
+
+  </div>
+</div>
+
+</div>
+<div class="flex-right">
+
+<div style="clear: both; width:300px display:flex">
+  <div style="float: left; margin-right: 2rem; margin-bottom: 5rem"><a href="https://www.doxdirect.com/">
+      <img src="assets/images/links/doxito.png" alt="" width="200px" /></a>
+  </div>
+  <div>
+    <h2>Doxito</h2>
+    <p>Print your poster online</p>
+
+  </div>
+</div>
+
+<div style="clear: both; width:300px display:flex">
+  <div style="float: left; margin-right: 2rem; margin-bottom: 5rem"><a href="https://tinypng.com/">
+      <img src="assets/images/links/tiny.png" alt="" width="200px" /></a>
+  </div>
+  <div>
+    <h2>Minify PNG</h2>
+    <p>Reduce image files sizes</p>
+
+  </div>
+</div>
+
+<div style="clear: both; width:300px display:flex">
+  <div style="float: left; margin-right: 2rem; margin-bottom: 5rem"><a href="https://jakearchibald.github.io/svgomg/">
+      <img src="assets/images/links/svg.png" alt="" width="200px" /></a>
+  </div>
+  <div>
+    <h2>Minify SVG</h2>
+    <p>Reduce SVG files sizes</p>
+
+  </div>
+</div>
+
+</div>
+</div>
+:ET
