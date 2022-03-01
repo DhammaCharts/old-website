@@ -14,7 +14,13 @@
 	{% else %}
 	<div class="container blackhead">
 		<h1 class="logo">
-			<a title="{{ site.author }}" href="{{ site.baseurl | append: "/" }}">{{ site.author }}</a><span class="black"> | </span><a class="rouge" title="{{ site.author }}" href="{{ site.baseurl | append: "/links.html" }}">links</a>
+				{% if page.title == "Links" %}
+				<!-- <a title="{{ site.author }}" class="gris" href="{{ site.baseurl | append: "/" }}">{{ site.author }}</a><span class="black"> | </span><a class="rouge" title="{{ site.author }}" href="{{ site.baseurl | append: "/links.html" }}">links</a> -->
+				<a title="{{ site.author }}" class="gris" href="{{ site.baseurl | append: "/" }}">{{ site.author }}</a><span class="black"> | </span><a  title="{{ site.author }}" href="{{ site.baseurl | append: "/links.html" }}">Links</a>
+				{% else %}
+				<!-- <a title="{{ site.author }}" href="{{ site.baseurl | append: "/" }}">{{ site.author }}</a><span class="black"> | </span><a class="rouge" title="{{ site.author }}" href="{{ site.baseurl | append: "/links.html" }}">links</a> -->
+				<a title="{{ site.author }}" href="{{ site.baseurl | append: "/" }}">{{ site.author }}</a><span class="black"> | </span><a class="gris" title="{{ site.author }}" href="{{ site.baseurl | append: "/links.html" }}">Links</a>
+				{% endif %}
 		</h1>
 	</div>
 	{% endif %}

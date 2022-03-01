@@ -21,7 +21,11 @@
 					</h1>
 					<span class="h2">Description</span>
 					{{ page.content }}
+
+
+
 					<div class="project-meta">
+						<!-- <button class="button-4"> View Fullscreen  </button> -->
 						<span class="h2">Technologies</span>
 						<p>{{ page.project.tech }}</p>
 						<span class="h2">Code</span>
@@ -34,7 +38,13 @@
 					<ul>
 						{% for image in page.images %}
 						<li>
-							<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}" />
+							{% if image.map != "" %}
+							<a href="{{ image.map | prepend: site.baseurl }}">
+								<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}" />
+							</a>
+							{% else %}
+								<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}" />
+							{% endif %}
 						</li>
 						{% endfor %}
 					</ul>

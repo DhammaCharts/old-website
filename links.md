@@ -24,6 +24,12 @@ link="https://usefulcharts.com/"
 title="Usefulcharts"
 description="A good website" %}
 
+{% include module.html
+image_path="assets/images/links/d3.png"
+link="https://d3js.org/"
+title="D3"
+description="JS library for creating charts" %}
+
 </div>
 <div class="flex-right">
 
@@ -44,6 +50,12 @@ image_path="assets/images/links/svg.png"
 link="https://jakearchibald.github.io/svgomg/"
 title="Minify SVG"
 description="Reduce SVG files sizes" %}
+
+{% include module.html
+image_path="assets/images/links/ink.png"
+link="https://inkscape.org/"
+title="Inkscape"
+description="Vector illustration software" %}
 
 </div>
 </div>
