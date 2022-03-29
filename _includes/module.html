@@ -1,9 +1,12 @@
 <div class="inDiv" style="clear: both; height: 175px; display:flex">
-  <div  width="200px" style="float: left; margin-right: 2rem; margin-bottom: 5rem"><a href="{{include.link}}">
+  <div width="200px" style="float: left; margin-right: 2rem; margin-bottom: 5rem"><a href="{{include.link}}">
       <img src="{{ include.image_path }}" alt="" style="width:130px"></a>
   </div>
   <div>
     <h2>{{ include.title }}</h2>
-    <a href="{{include.link}}">{{ include.description | markdownify }}</a>
+    <!-- <a class="rouge" target="_blank" href="{{include.link}}">{{ include.description | markdownify }}</a> -->
+    <a target="_blank" href="{{include.link}}">
+      <div class="rouge-first">{{ include.description | markdownify }}</div>
+    </a>
   </div>
 </div>

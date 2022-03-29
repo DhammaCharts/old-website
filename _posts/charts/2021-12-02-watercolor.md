@@ -1,7 +1,7 @@
 ---
-layout: postArt
+layout: post
 permalink: /:title/
-side: Art
+side: Charts
 category: Ink & Watercolor
 
 meta:
@@ -10,7 +10,7 @@ meta:
 project:
   title: "Patimokkha 152"
   type: "Watercolor"
-  logo: "assets/images/art/patimok.png"
+  logo: "assets/images/art/patimokmin500.jpg"
   tech: "JS, D3.js, JSON database"
 
 code:
@@ -23,7 +23,7 @@ file:
 
 images:
   - image: "test"
-    url: "/assets/images/art/patimok.png"
+    url: "/assets/images/art/patimokmin.jpg"
     alt: "Sutta Pitaka"
 
 ---

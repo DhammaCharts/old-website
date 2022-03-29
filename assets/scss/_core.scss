@@ -170,7 +170,19 @@ pre {
 }
 
 .rouge {
-	color: $color-red!important;
+	color: $color-red;
+}
+.rougeclair {
+	color: $color-red-light;
+}
+a.rougeclair:hover {
+  color: $color-red;
+}
+.blackclair {
+	color: $color-black-light;
+}
+a.blackclair:hover {
+  color: black;
 }
 
 .rouge h1{
@@ -300,4 +312,12 @@ pre {
 
 .button-4:-webkit-details-marker {
   display: none;
+}
+.previous{
+width: 0.7em;
+float: left;
+}
+
+div.rouge-first::first-letter {
+  color: $color-red;
 }

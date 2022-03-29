@@ -31,7 +31,7 @@
 				<h1 class="projects">{{ category_name }}</h1>
 
 				<ul class="projects-list">
-					{% for item in site.categories[category_name]  %}
+					{% for item in site.categories[category_name] reversed  %}
 					<li>
 						<a href="{{ item.url | prepend: site.baseurl }}">
 							<div class="img-wrapper">
