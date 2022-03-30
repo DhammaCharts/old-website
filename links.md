@@ -37,7 +37,7 @@ description="JS library for creating charts" %}
 image_path="assets/images/links/toolur.png"
 link="https://compressimage.toolur.com/"
 title="Toolur"
-description="Image Resizer 7 Optimizer" %}
+description="Image Resizer & Optimizer" %}
 
 </div>
 <div class="flex-right">

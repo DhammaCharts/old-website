@@ -28,11 +28,11 @@ images:
     map: "/assets/images/charts/4NobleTruths/map.html"
 
   - image:
-    url: "/assets/images/charts/4NobleTruths/chart40B&N-min-1500.jpg"
+    url: "/assets/images/charts/4NobleTruths/chart40b_n-min-1500.jpg"
     alt: "B&W"
 
   - image:
-    url: "/assets/images/charts/4NobleTruths/Chart40back-min-1500.jpg"
+    url: "/assets/images/charts/4NobleTruths/chart40back-min-1500.jpg"
     alt: "Color"
 
 
