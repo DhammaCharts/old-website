@@ -66,5 +66,11 @@ link="https://inkscape.org/"
 title="Inkscape"
 description="Vector illustration software" %}
 
+{% include module.html
+image_path="assets/images/links/obser.png"
+link="https://observablehq.com/"
+title="Observable"
+description="Code online & analyse data" %}
+
 </div>
 </div>
