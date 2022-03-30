@@ -10,7 +10,7 @@ meta:
 project:
   title: "4 Noble Truths"
   type: "Radial"
-  logo: "assets/images/charts/4NobleTruths/chart40.png"
+  logo: "assets/images/charts/4NobleTruths/chart40-min-1500.jpg"
   tech: "Inkscape"
 
 code:
@@ -23,16 +23,16 @@ file:
 
 images:
   - image:
-    url: "/assets/images/charts/4NobleTruths/chart40.png"
+    url: "/assets/images/charts/4NobleTruths/chart40-min-1500.jpg"
     alt: "background"
     map: "/assets/images/charts/4NobleTruths/map.html"
 
   - image:
-    url: "/assets/images/charts/4NobleTruths/chart40B&N.png"
+    url: "/assets/images/charts/4NobleTruths/chart40B&N-min-1500.jpg"
     alt: "B&W"
 
   - image:
-    url: "/assets/images/charts/4NobleTruths/Chart40back.png"
+    url: "/assets/images/charts/4NobleTruths/Chart40back-min-1500.jpg"
     alt: "Color"
 
 

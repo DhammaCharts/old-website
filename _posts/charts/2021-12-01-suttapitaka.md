@@ -10,7 +10,7 @@ meta:
 project:
   title: "Sutta Pitaka"
   type: "Dendrogram"
-  logo: "assets/images/diagrams/SuttaPitaka/suttapitaka-min2-small.png"
+  logo: "assets/images/diagrams/SuttaPitaka/suttapitaka-min-1500.jpg"
   tech: "JS, D3.js, JSON database"
 
 code:
@@ -23,7 +23,7 @@ file:
 
 images:
   - image:
-    url: "/assets/images/diagrams/SuttaPitaka/suttapitaka-min2.png"
+    url: "/assets/images/diagrams/SuttaPitaka/suttapitaka-min-1500.jpg"
     alt: "Sutta Pitaka"
 
 ---
