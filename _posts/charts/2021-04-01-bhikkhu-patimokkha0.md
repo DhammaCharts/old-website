@@ -9,8 +9,7 @@ meta:
 
 project:
   title: "Bhikkhu Patimokkha"
-  type: "Dendrogram"
-  logo: "assets/images/diagrams/Patimokkha/bhikkhu-patimokkha-min-1500.jpg"
+  logo: "assets/images/diagrams/Patimokkha/bhikkhu_patimokkha-min-1500.jpg"
   tech: "JS, D3.js, JSON database"
 
 code:
@@ -23,7 +22,7 @@ file:
 
 images:
   - image:
-    url: "/assets/images/diagrams/Patimokkha/bhikkhu-patimokkha-min-1500.jpg"
+    url: "/assets/images/diagrams/Patimokkha/bhikkhu_patimokkha-min-1500.jpg"
     alt: "Bhikkhu Patimokkha"
 
 ---
