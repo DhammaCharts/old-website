@@ -26,12 +26,31 @@
 
 					<div class="project-meta">
 						<!-- <button class="button-4"> View Fullscreen  </button> -->
+						{% if page.project.tech %}
 						<span class="h2">Technologies</span>
 						<p>{{ page.project.tech }}</p>
+						{% endif %}
+						{% if page.code %}
 						<span class="h2">Code</span>
 						<p><a title="{{ page.code.title }}" href="{{ page.code.url }}" target="_blank" rel="nofollow">{{ page.code.title }}</a></p>
+						{% endif %}
+
+						{% if page.project.year %}
 						<span class="h2">Year</span>
-						<p>{{ page.code.year }}</p>
+						<p>{{ page.project.year }}</p>
+						{% endif %}
+
+						{% if page.sources %}
+						<span class="h2">Sources</span>
+						<ul>
+							{% for source in page.sources %}
+							<li>
+								<a href="{{ source.url }}">{{ source.title }}</a>
+							</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+
 					</div>
 				</article>
 				<aside>

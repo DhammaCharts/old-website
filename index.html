@@ -14,7 +14,7 @@
 <body class="black">
 	{% include header.html %}
 	<main class="home">
-		{% for category in site.categories %}
+		{% for category in site.categories reversed %}
 		{% capture category_name %}{{ category | first }}{% endcapture %}
 
 		{% assign charts = true %}
@@ -31,7 +31,7 @@
 				<h1 class="projects">{{ category_name }}</h1>
 
 				<ul class="projects-list">
-					{% for item in site.categories[category_name] reversed  %}
+					{% for item in site.categories[category_name]   %}
 					<li>
 						<a href="{{ item.url | prepend: site.baseurl }}">
 							<div class="img-wrapper">

@@ -12,11 +12,12 @@ project:
   type: "Dendrogram"
   logo: "assets/images/diagrams/SuttaPitaka/suttapitaka-min-2000.jpg"
   tech: "JS, D3.js, JSON database"
+  year: "2017"
+
 
 code:
   title: "ObservableHQ"
   url: "https://github.com/arnolds/pineapple"
-  year: "2017"
 
 file:
   title
