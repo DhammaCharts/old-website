@@ -13,7 +13,7 @@
 	</div>
 	{% else %}
 	<div class="container blackhead">
-		{% if page.layout == "post" %}
+		{% if page.layout == "post" || page.title == "Links" %}
 		<a href="{{ site.baseurl | append: "/" }}">
 			<img class="previous" src="{{ site.baseurl | append: "/" }}assets/images/previous.png" alt="previous">
 		</a>
