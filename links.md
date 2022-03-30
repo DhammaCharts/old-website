@@ -33,6 +33,12 @@ link="https://d3js.org/"
 title="D3"
 description="JS library for creating charts" %}
 
+{% include module.html
+image_path="assets/images/links/toolur.png"
+link="https://compressimage.toolur.com/"
+title="Toolur"
+description="Image Resizer 7 Optimizer" %}
+
 </div>
 <div class="flex-right">
 
