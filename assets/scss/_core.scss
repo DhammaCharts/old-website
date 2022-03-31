@@ -313,8 +313,39 @@ a.blackclair:hover {
   display: none;
 }
 .previous{
-width: 0.7em;
-float: left;
+	// width: 0.7em;
+	width: 0.5em;
+}
+
+.button-5{
+	appearance: none;
+  background-color: transparent;
+  border: none;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  // font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  list-style: none;
+  padding: 0.2rem 2rem;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+	// margin-bottom: 20px;
+	// top:50%
+	// background-color:#0a0a23;
+	// color: #fff;
+	// border:none;
+	// padding: 3rem;
+	// float: left;
+	// width: 4rem;
 }
 
 div.rouge-first::first-letter {
