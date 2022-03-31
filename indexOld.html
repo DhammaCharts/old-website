@@ -1,0 +1,102 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{{ site.author }} / {{ site.tagline }}</title>
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="keywords" content="{{ site.keywords }}">
+	{% include head.html %}
+</head>
+
+<body class="black">
+	{% include header.html %}
+	<main class="home">
+		{% for category in site.categories reversed %}
+		{% capture category_name %}{{ category | first }}{% endcapture %}
+
+		{% assign charts = true %}
+
+		{% for item in site.categories[category_name]  %}
+		{% if item.side == "Art" %}
+		{% assign charts = false %}
+		{% endif %}
+		{% endfor %}
+
+		{% if charts == true %}
+		<!-- Old layout -->
+		<!-- <section class="projects">
+			<div class="container">
+				<h1 class="projects">{{ category_name }}</h1>
+
+				<ul class="projects-list">
+					{% for item in site.categories[category_name]   %}
+					<li>
+						<a href="{{ item.url | prepend: site.baseurl }}">
+							<div class="img-wrapper">
+								<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+							</div>
+							<span class="h2">{{ item.project.type }}</span>
+							<h3>{{ item.project.title }}</h3>
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</section> -->
+
+		<!-- New layout -->
+		<!-- <section class="projects">
+			<div class="container">
+				<h1 class="projects">{{ category_name }}</h1>
+
+				<div class="masonry">
+					{% for item in site.categories[category_name]   %}
+					<div class="item">
+						<a href="{{ item.url | prepend: site.baseurl }}">
+							<div class="img-wrapper">
+								<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+							</div>
+							<span class="h2">{{ item.project.type }}</span>
+							<h3>{{ item.project.title }}</h3>
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section> -->
+
+		<!-- New New Layout -->
+
+		<section class="projects">
+			<div class="container">
+				<h1 class="projects">{{ category_name }}</h1>
+
+				<div class="masonry-wrapper">
+					<div class="masonry">
+						{% for item in site.categories[category_name]   %}
+						<div class="masonry-item">
+							<div class="masonry-content">
+								<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								<h3 class="masonry-description">{{ item.project.title }}</h3>
+								<p class="masonry-description">{{ item.project.type }}</p>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{% endif %}
+
+		{% endfor %}
+	</main>
+	{% include footer.html %}
+	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+</body>
+
+</html>

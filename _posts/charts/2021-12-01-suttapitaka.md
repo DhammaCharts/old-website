@@ -2,7 +2,9 @@
 layout: post
 permalink: /:title/
 side: Charts
-category: Hierarchical
+# category: Hierarchical
+category: All
+
 
 meta:
   keywords: "Jekyll, Pineapple"

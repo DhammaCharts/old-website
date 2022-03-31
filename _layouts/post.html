@@ -42,13 +42,15 @@
 
 						{% if page.sources %}
 						<span class="h2">Sources</span>
-						<ul>
-							{% for source in page.sources %}
-							<li>
-								<a href="{{ source.url }}">{{ source.title }}</a>
-							</li>
-							{% endfor %}
-						</ul>
+						<!-- <ul> -->
+						{% for source in page.sources %}
+						<!-- <li> -->
+						<p>
+							<a href="{{ source.url }}">{{ source.title }}</a>
+						</p>
+						<!-- </li> -->
+						{% endfor %}
+						<!-- </ul> -->
 						{% endif %}
 
 					</div>

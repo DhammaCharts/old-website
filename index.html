@@ -17,39 +17,36 @@
 		{% for category in site.categories reversed %}
 		{% capture category_name %}{{ category | first }}{% endcapture %}
 
-		{% assign charts = true %}
-
-		{% for item in site.categories[category_name]  %}
-		{% if item.side == "Art" %}
-		{% assign charts = false %}
-		{% endif %}
-		{% endfor %}
-
-		{% if charts == true %}
 		<section class="projects">
 			<div class="container">
 				<h1 class="projects">{{ category_name }}</h1>
 
-				<ul class="projects-list">
-					{% for item in site.categories[category_name]   %}
-					<li>
-						<a href="{{ item.url | prepend: site.baseurl }}">
-							<div class="img-wrapper">
-								<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+				<div class="masonry-wrapper">
+					<div class="masonry">
+						{% for item in site.categories[category_name]   %}
+						<div class="masonry-item">
+							<div class="masonry-content">
+								<a href="{{ item.url | prepend: site.baseurl }}">
+									<div class="img-wrapper">
+										<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+									</div>
+									<span class="h2">{{ item.project.type }}</span>
+									<h3>{{ item.project.title }}</h3>
+								</a>
 							</div>
-							<span class="h2">{{ item.project.type }}</span>
-							<h3>{{ item.project.title }}</h3>
-						</a>
-					</li>
-					{% endfor %}
-				</ul>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
 			</div>
 		</section>
-		{% endif %}
 
 		{% endfor %}
+
+
 	</main>
 	{% include footer.html %}
+	<script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
 </body>

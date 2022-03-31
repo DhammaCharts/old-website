@@ -2,7 +2,8 @@
 layout: post
 permalink: /:title/
 side: Charts
-category: Handmade
+# category: Hand-made
+category: All
 
 meta:
   keywords: "Jekyll, Pineapple"
