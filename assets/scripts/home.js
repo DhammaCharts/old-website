@@ -6,7 +6,7 @@ var sr = ScrollReveal({
 	scale    : 1
 });
 
-sr.reveal('.masonry a');
+sr.reveal('.masonry .masonry-item a');
 sr.reveal('.projects-list a');
 sr.reveal('.posts-list a');
 
