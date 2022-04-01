@@ -2,6 +2,10 @@ html {
 	font-size: 62.5%;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 body {
 	background: $color-white;
 	color: $color-black;

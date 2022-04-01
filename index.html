@@ -24,8 +24,8 @@
 				<div class="masonry-wrapper">
 					<div class="masonry">
 						{% for item in site.categories[category_name]   %}
-						<div class="masonry-item">
-							<div class="masonry-content">
+						<div class="masonry-item load-hidden">
+							<div class=" masonry-content">
 								<a href="{{ item.url | prepend: site.baseurl }}">
 									<div class="img-wrapper">
 										<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
@@ -47,7 +47,7 @@
 	</main>
 	{% include footer.html %}
 	<script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
+	<!-- <script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script> -->
 	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
 </body>
 
