@@ -3,7 +3,7 @@ layout: post
 permalink: /:title/
 side: Charts
 # category: Hierarchical
-category: All
+category: Digital
 
 
 meta:

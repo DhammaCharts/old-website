@@ -3,7 +3,7 @@ layout: post
 permalink: /:title/
 side: Charts
 # category: Hand-Made
-category: All
+category: Hand Made
 
 
 meta:
