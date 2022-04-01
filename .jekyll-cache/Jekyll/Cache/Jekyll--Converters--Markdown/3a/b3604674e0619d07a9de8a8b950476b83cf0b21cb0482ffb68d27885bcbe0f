@@ -1,4 +1,4 @@
-I"¹<!-- <h1 class="projects rouge">Links</h1> -->
+I"<!-- <h1 class="projects rouge">Links</h1> -->
 
 <div class="flex-container">
 <div class="flex-left">
@@ -12,7 +12,7 @@
     <!-- <a class="rouge" target="_blank" href="https://observablehq.com/@sugi2000/charts-of-chart-types"><p>List of all charts possible</p>
 </a> -->
     <a target="_blank" href="https://observablehq.com/@sugi2000/charts-of-chart-types">
-      <div class="rouge-first"><p>List of all charts possible</p>
+      <div class="link-item rouge-first"><p>List of all charts possible</p>
 </div>
     </a>
   </div>
@@ -27,7 +27,7 @@
     <!-- <a class="rouge" target="_blank" href="https://rasterbator.net/"><p>Print any size by yourself</p>
 </a> -->
     <a target="_blank" href="https://rasterbator.net/">
-      <div class="rouge-first"><p>Print any size by yourself</p>
+      <div class="link-item rouge-first"><p>Print any size by yourself</p>
 </div>
     </a>
   </div>
@@ -42,7 +42,7 @@
     <!-- <a class="rouge" target="_blank" href="https://usefulcharts.com/"><p>A good website</p>
 </a> -->
     <a target="_blank" href="https://usefulcharts.com/">
-      <div class="rouge-first"><p>A good website</p>
+      <div class="link-item rouge-first"><p>A good website</p>
 </div>
     </a>
   </div>
@@ -57,7 +57,7 @@
     <!-- <a class="rouge" target="_blank" href="https://d3js.org/"><p>JS library for creating charts</p>
 </a> -->
     <a target="_blank" href="https://d3js.org/">
-      <div class="rouge-first"><p>JS library for creating charts</p>
+      <div class="link-item rouge-first"><p>JS library for creating charts</p>
 </div>
     </a>
   </div>
@@ -72,7 +72,7 @@
     <!-- <a class="rouge" target="_blank" href="https://compressimage.toolur.com/"><p>Image Resizer &amp; Optimizer</p>
 </a> -->
     <a target="_blank" href="https://compressimage.toolur.com/">
-      <div class="rouge-first"><p>Image Resizer &amp; Optimizer</p>
+      <div class="link-item rouge-first"><p>Image Resizer &amp; Optimizer</p>
 </div>
     </a>
   </div>
@@ -90,7 +90,7 @@
     <!-- <a class="rouge" target="_blank" href="https://www.doxdirect.com/"><p>Print your poster online</p>
 </a> -->
     <a target="_blank" href="https://www.doxdirect.com/">
-      <div class="rouge-first"><p>Print your poster online</p>
+      <div class="link-item rouge-first"><p>Print your poster online</p>
 </div>
     </a>
   </div>
@@ -105,7 +105,7 @@
     <!-- <a class="rouge" target="_blank" href="https://tinypng.com/"><p>Reduce image files sizes</p>
 </a> -->
     <a target="_blank" href="https://tinypng.com/">
-      <div class="rouge-first"><p>Reduce image files sizes</p>
+      <div class="link-item rouge-first"><p>Reduce image files sizes</p>
 </div>
     </a>
   </div>
@@ -120,7 +120,7 @@
     <!-- <a class="rouge" target="_blank" href="https://jakearchibald.github.io/svgomg/"><p>Reduce SVG files sizes</p>
 </a> -->
     <a target="_blank" href="https://jakearchibald.github.io/svgomg/">
-      <div class="rouge-first"><p>Reduce SVG files sizes</p>
+      <div class="link-item rouge-first"><p>Reduce SVG files sizes</p>
 </div>
     </a>
   </div>
@@ -135,7 +135,7 @@
     <!-- <a class="rouge" target="_blank" href="https://inkscape.org/"><p>Vector illustration software</p>
 </a> -->
     <a target="_blank" href="https://inkscape.org/">
-      <div class="rouge-first"><p>Vector illustration software</p>
+      <div class="link-item rouge-first"><p>Vector illustration software</p>
 </div>
     </a>
   </div>
@@ -150,7 +150,7 @@
     <!-- <a class="rouge" target="_blank" href="https://observablehq.com/"><p>Code online &amp; analyse data</p>
 </a> -->
     <a target="_blank" href="https://observablehq.com/">
-      <div class="rouge-first"><p>Code online &amp; analyse data</p>
+      <div class="link-item rouge-first"><p>Code online &amp; analyse data</p>
 </div>
     </a>
   </div>

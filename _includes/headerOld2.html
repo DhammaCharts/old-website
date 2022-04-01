@@ -3,12 +3,7 @@
 	<div class="container blackhead">
 		{% if page.layout == "post" or page.title == "Links" %}
 		<a href="{{ site.baseurl | append: "/" }}" class="bigger">
-			<div class="rot">
-				<div class="arrow">
-					<div class="arrow-top"></div>
-					<div class="arrow-bottom"></div>
-				</div>
-			</div>
+			<img class="previous" src="{{ site.baseurl | append: "/" }}assets/images/previousgris.png" alt="previous">
 		</a>
 		{% endif %}
 		<h1 class="logo">

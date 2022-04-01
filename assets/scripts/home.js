@@ -8,8 +8,10 @@ var sr = ScrollReveal({
 
 // sr.reveal('.masonry .masonry-item a');
 sr.reveal('.masonry-item');
+sr.reveal('.link-item');
 sr.reveal('.protitle');
 sr.reveal('.projects-list a');
+sr.reveal('.posts-list a');
 sr.reveal('.posts-list a');
 
 /**
