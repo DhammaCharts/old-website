@@ -80,31 +80,7 @@ a {
 	color: $color-black;
 	text-decoration: none;
 }
-a.bigger {
-    position: relative;
-}
-.bigger img{
-	display: inherit;
-}
-.previous{
-	// width: 0.7em;
-	width: 0.5em;
-}
-.bigger::after{
-	content: "";
-	height: 200%;
-	width: 500%;
-	top: -55%;
-	left: -188%;
-	position: absolute;
-    // content:"";
-    // height: 3rem;
-    // width: 3rem;
-    // top: -50%;
-    // left: -50%;
-    // position: absolute;
-    // background: rgba(0, 0, 0, 0.4);
-}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -398,85 +374,134 @@ a.blackclair:hover {
 	// width: 4rem;
 }
 
-div.rouge-first::first-letter {
+
+
+.rouge-first::first-letter {
   color: $color-red;
 }
 
 // https://codepen.io/HektorW/pen/eJMMaR
 
-.rot{
-  transform:rotate(180deg) translateY(-150px)
-}
+// .rot{
+//   transform:rotate(180deg) translateY(-150px)
+// }
+//
+// .arrow {
+//   cursor: pointer;
+// 	// height: 120px;
+// 	height: 30px;
+//   left: 50%;
+//   position: absolute;
+//   top: 50%;
+//   transform: translateX(-50%) translateY(-50%);
+//   transition: transform .1s;
+// 	// width: 80px;
+// 	width: 20px;
+//
+//   $transition-time: .15s;
+//
+//   &-top,
+//   &-bottom {
+//     background-color: #666;
+//     height: 4px;
+//     left: -5px;
+//     position: absolute;
+//     top: 50%;
+//     width: 100%;
+//
+//     &:after {
+//       background-color: #fff;
+//       content: '';
+//       height: 100%;
+//       position: absolute;
+//       top: 0;
+//       transition: all $transition-time;
+//     }
+//   }
+//
+//   &-top {
+//     transform: rotate(45deg);
+//     transform-origin: bottom right;
+//
+//     &:after {
+//       left: 100%;
+//       right: 0;
+//       transition-delay: 0s;
+//     }
+//   }
+//
+//   &-bottom {
+//     transform: rotate(-45deg);
+//     transform-origin: top right;
+//
+//     &:after {
+//       left: 0;
+//       right: 100%;
+//       transition-delay: $transition-time;
+//     }
+//   }
+//
+//   &:hover & {
+//
+//     &-top:after {
+//       left: 0;
+//       transition-delay: $transition-time;
+//     }
+//
+//     &-bottom:after {
+//       right: 0;
+//       transition-delay: 0s;
+//     }
+//   }
+//
+//   &:active {
+//     transform: translateX(-50%) translateY(-50%) scale(0.9);
+//   }
+// }
+
+// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows
 
 .arrow {
-  cursor: pointer;
-	// height: 120px;
-	height: 30px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  transition: transform .1s;
-	// width: 80px;
-	width: 20px;
+  border: solid grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+}
 
-  $transition-time: .15s;
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
 
-  &-top,
-  &-bottom {
-    background-color: #666;
-    height: 4px;
-    left: -5px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
+.bigger:hover .arrow {
+  border: solid black;
+	border-width: 0 3px 3px 0;
+}
 
-    &:after {
-      background-color: #fff;
-      content: '';
-      height: 100%;
-      position: absolute;
-      top: 0;
-      transition: all $transition-time;
-    }
-  }
 
-  &-top {
-    transform: rotate(45deg);
-    transform-origin: bottom right;
 
-    &:after {
-      left: 100%;
-      right: 0;
-      transition-delay: 0s;
-    }
-  }
-
-  &-bottom {
-    transform: rotate(-45deg);
-    transform-origin: top right;
-
-    &:after {
-      left: 0;
-      right: 100%;
-      transition-delay: $transition-time;
-    }
-  }
-
-  &:hover & {
-
-    &-top:after {
-      left: 0;
-      transition-delay: $transition-time;
-    }
-
-    &-bottom:after {
-      right: 0;
-      transition-delay: 0s;
-    }
-  }
-
-  &:active {
-    transform: translateX(-50%) translateY(-50%) scale(0.9);
-  }
+a.bigger {
+    position: relative;
+}
+// .bigger img{
+// 	display: inherit;
+// }
+.previous{
+	// width: 0.7em;
+	width: 0.5em;
+}
+.bigger::after{
+	content: "";
+	height: 200%;
+	width: 500%;
+	top: -55%;
+	left: -188%;
+	position: absolute;
+    // content:"";
+    // height: 3rem;
+    // width: 3rem;
+    // top: -50%;
+    // left: -50%;
+    // position: absolute;
+    // background: rgba(0, 0, 0, 0.4);
 }
