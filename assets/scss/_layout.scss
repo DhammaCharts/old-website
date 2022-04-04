@@ -523,6 +523,7 @@
 	aside {
 		margin-left: -3rem;
 		margin-right: -3rem;
+		min-height: 700px;
 
 		@media (min-width: $breakpoint-small) {
 			@include clearfix;
