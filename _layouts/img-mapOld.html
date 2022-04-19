@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
 <head>
 
@@ -7,19 +7,24 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Sutta Pitaka</title>
+	<title>{{ site.title }}{% if page.title and page.title != "" %} &mdash; {{ page.title }}{% endif %}</title>
 
-	<!-- <meta name="description" content="{{ site.description }}"> -->
+	{% if site.description %}
+	<meta name="description" content="{{ site.description }}">{% endif %}
 
-	<!-- <link rel="apple-touch-icon" href="{{ site.icon }}"> -->
+	<link rel="apple-touch-icon" href="{{ site.icon }}">
+
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
 	<!-- <link rel="stylesheet" href="{{ '/assets/css/leaflet-sidebar.css' | absolute_url }}"> -->
-	<!-- <link rel="stylesheet" href="{{ '/assets/css/leaflet.css' | absolute_url }}"> -->
+
+	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+
 
 	<style>
-		<style>body {
+		body {
 			padding: 0;
 			margin: 0;
 		}
@@ -46,6 +51,8 @@
 			justify-content: flex-end; */
 			position: absolute;
 			left: calc(100vw - 60px);
+
+
 			/* border: none !important; */
 		}
 
@@ -65,6 +72,8 @@
 	<!-- <script src="{{ '/assets/js/leaflet-sidebar.js' | absolute_url }}"></script> -->
 
 	<script>
+
+
 		let map = L.map("image-map", {
 			crs: L.CRS.Simple,
 			minZoom: 1,
@@ -82,22 +91,14 @@
 
 		async function getImageData(url) {
 			const img = await loadImage(url);
-			return {
-				img,
-				width: img.naturalWidth,
-				height: img.naturalHeight
-			};
+			return { img, width: img.naturalWidth, height: img.naturalHeight };
 		}
 
 		async function showOnMap(url) {
-			const {
-				img,
-				width,
-				height
-			} = await getImageData(url);
+			const { img, width, height } = await getImageData(url);
 
-			const southWest = map.unproject([0, height], map.getMaxZoom());
-			const northEast = map.unproject([width, 0], map.getMaxZoom());
+			const southWest = map.unproject([0, height], map.getMaxZoom() - 1);
+			const northEast = map.unproject([width, 0], map.getMaxZoom() - 1);
 
 			const bounds = new L.LatLngBounds(southWest, northEast);
 			L.imageOverlay(img.src, bounds).addTo(map);
@@ -123,6 +124,10 @@
 		showOnMap(
 			"{{ page.map-url }}"
 		);
+
+
+
+
 	</script>
 
 </body>

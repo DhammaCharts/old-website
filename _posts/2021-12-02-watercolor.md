@@ -12,7 +12,7 @@ meta:
 project:
   title: "Patimokkha 152"
   type: "Ink & Watercolor"
-  logo: "assets/images/art/patimokmin500.jpg"
+  logo: "assets/images/charts/Patimokkha152/patimokmin500.jpg"
   tech: "JS, D3.js, JSON database"
   year: "2017"
 
@@ -26,7 +26,7 @@ file:
 
 images:
   - image: "test"
-    url: "/assets/images/art/patimokmin.jpg"
+    url: "/assets/images/charts/Patimokkha152/patimokmin.jpg"
     alt: "Sutta Pitaka"
 
 ---

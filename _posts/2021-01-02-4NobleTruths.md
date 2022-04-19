@@ -36,6 +36,8 @@ images:
   - image:
     url: "/assets/images/charts/4NobleTruths/chart40back-min-1500.jpg"
     alt: "Color"
+    map: "/assets/images/charts/4NobleTruths/map0.html"
+
 
 
 ---

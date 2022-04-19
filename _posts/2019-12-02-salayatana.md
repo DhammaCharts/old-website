@@ -12,7 +12,7 @@ meta:
 project:
   title: "Salayatana"
   type: "Pencils"
-  logo: "assets/images/diagrams/salayatana/salayatana.jpg"
+  logo: "assets/images/charts/salayatana/salayatana.jpg"
   year: "2019"
 
 sources:
@@ -25,7 +25,7 @@ file:
 
 images:
   - image: "test"
-    url: "/assets/images/diagrams/salayatana/salayatana.jpg"
+    url: "/assets/images/charts/salayatana/salayatana.jpg"
     alt: "Salayatana"
 
 ---

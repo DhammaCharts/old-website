@@ -11,7 +11,7 @@ meta:
 project:
   title: "Dependant Co-Arising"
   type: "Pencils"
-  logo: "assets/images/diagrams/twelveLinks/twelveLinks.jpg"
+  logo: "assets/images/charts/twelveLinks/twelveLinks.jpg"
   year: "2018"
 
 sources:
@@ -25,7 +25,7 @@ file:
 
 images:
   - image: "test"
-    url: "/assets/images/diagrams/twelveLinks/twelveLinks.jpg"
+    url: "/assets/images/charts/twelveLinks/twelveLinks.jpg"
     alt: "Twelve Links"
 
 ---
