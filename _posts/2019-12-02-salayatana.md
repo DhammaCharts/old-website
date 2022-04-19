@@ -26,6 +26,7 @@ file:
 images:
   - image: "test"
     url: "/assets/images/charts/salayatana/salayatana.jpg"
+    map: "/assets/images/charts/salayatana/salayatana.jpg"
     alt: "Salayatana"
 
 ---

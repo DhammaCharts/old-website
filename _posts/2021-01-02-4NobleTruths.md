@@ -27,7 +27,7 @@ images:
   - image:
     url: "/assets/images/charts/4NobleTruths/chart40-min-1500.jpg"
     alt: "background"
-    map: "/assets/images/charts/4NobleTruths/map.html"
+    map: "/assets/images/charts/4NobleTruths/chart40.png"
 
   - image:
     url: "/assets/images/charts/4NobleTruths/chart40b_n-min-1500.jpg"
@@ -36,7 +36,7 @@ images:
   - image:
     url: "/assets/images/charts/4NobleTruths/chart40back-min-1500.jpg"
     alt: "Color"
-    map: "/assets/images/charts/4NobleTruths/map0.html"
+    map: "/assets/images/charts/4NobleTruths/chart40back.png"
 
 
 
