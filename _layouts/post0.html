@@ -77,26 +77,23 @@
 		</section>
 		<section class="project-navigation">
 			<div class="container">
-
-				{% if page.next.url %}
-				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="prev">
-					<span class="h2">Next</span>
-					<h2>{{ page.next.project.title }}</h2>
-				</a>
-				{% else %}
-				<a class="prev"></a>
-				{% endif %}
-
 				{% if page.previous.url %}
-				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="next">
+				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
 					<span class="h2">Previous</span>
 					<h2>{{ page.previous.project.title }}</h2>
 				</a>
 				{% else %}
-				<a class="next"></a>
+				<a class="prev"></a>
 
 				{% endif %}
-
+				{% if page.next.url %}
+				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
+					<span class="h2">Next</span>
+					<h2>{{ page.next.project.title }}</h2>
+				</a>
+				{% else %}
+				<a class="next"></a>
+				{% endif %}
 			</div>
 		</section>
 	</main>
