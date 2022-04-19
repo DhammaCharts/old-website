@@ -32,5 +32,3 @@ images:
 
 ---
 All the connexions of the Sutta Pitaka and its major divisons. The extremities of the diagram (leaves) represent sometimes a single long sutta or sometimes a whole chapter (vagga) containing a number of small suttas. Thus, one leaf represent more or less the same quantity of information.
-
-map: "/assets/images/charts/SuttaPitaka/map.html"
