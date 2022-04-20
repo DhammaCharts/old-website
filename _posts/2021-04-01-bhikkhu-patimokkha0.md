@@ -29,6 +29,9 @@ images:
     alt: "Bhikkhu Patimokkha"
     map: "/assets/images/charts/Patimokkha/bhikkhu-patimokkha.png"
     zoom-max : 1.4
+  - image:
+    url: "/assets/images/charts/interactivePat/interactivepat.jpg"
+    link: https://observablehq.com/embed/4b0f15b0e63eb5f1?cells=chart
 
 ---
-All the subdivision of the Bhikkhu Patimokkha.
+All the subdivision of the 152 major rules of the Bhikkhu Patimokkha and their relationship.
