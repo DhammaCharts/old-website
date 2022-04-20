@@ -61,7 +61,7 @@
 						<li>
 							{% if image.map %}
 							<!-- <a href="{{ image.map | prepend: site.baseurl }}"> below doesn't need extra pages for map, only one at top level-->
-								<a href='/map.html?map-url={{ image.map | prepend: site.baseurl }}'>
+								<a href='/map.html?map-url={{ image.map | prepend: site.baseurl }}&zoom-max={{ image.zoom-max }}&zoom-min={{ image.zoom-min }}'>
 								<img class="load-hidden" src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}" />
 							</a>
 							{% else %}

@@ -70,6 +70,8 @@
 	// console.log(queryString);
 	const urlParams = new URLSearchParams(queryString);
 	const mapUrl = urlParams.get('map-url')
+	const zoomMax = urlParams.get('zoom-max')
+	const zoomMin = urlParams.get('zoom-min')
 	// console.log(mapUrl);
 	// let str = mapUrl;
 	// str = str.slice(0, 1) + str.slice(2);
@@ -78,8 +80,8 @@
 
 		let map = L.map("image-map", {
 			crs: L.CRS.Simple,
-			minZoom: 1,
-			maxZoom: 4,
+			minZoom: zoomMax ? zoomMax : 1,
+			maxZoom: zoomMin ? zoomMin : 4,
 		});
 
 		function loadImage(url) {

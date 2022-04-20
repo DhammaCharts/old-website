@@ -27,6 +27,8 @@ images:
   - image:
     url: "/assets/images/charts/Patimokkha/bhikkhu_patimokkha-min-1500.jpg"
     alt: "Bhikkhu Patimokkha"
+    map: "/assets/images/charts/Patimokkha/bhikkhu-patimokkha.png"
+    zoom-max : 1.4
 
 ---
 All the subdivision of the Bhikkhu Patimokkha.
