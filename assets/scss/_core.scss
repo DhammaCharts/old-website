@@ -463,7 +463,8 @@ a.blackclair:hover {
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows
 
 .arrow {
-  border: solid grey;
+	// border: solid grey;
+	border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 6px;
@@ -474,10 +475,10 @@ a.blackclair:hover {
   -webkit-transform: rotate(135deg);
 }
 
-.bigger:hover .arrow {
-  border: solid black;
-	border-width: 0 3px 3px 0;
-}
+// .bigger:hover .arrow {
+//   border: solid black;
+// 	border-width: 0 3px 3px 0;
+// }
 
 a.bigger {
     position: relative;
