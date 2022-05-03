@@ -42,4 +42,4 @@ images:
 
 ---
 
-Major concepts of Early Buddhist Texts.
+This chart is still in progress and contains many errors. It represent the major concepts of Early Buddhist Texts.
