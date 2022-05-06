@@ -42,7 +42,7 @@ sources :
   - title : Dhammadana, List of 227 Rules
     url : https://en.dhammadana.org/sangha/vinaya/227.htm
     author : Isi Dhamma
-    license : CC BY-NC-ND 3.0  onsent
+    license : CC BY-NC-ND 3.0
 
 references :
 - title : The Buddhist Monastic Code
