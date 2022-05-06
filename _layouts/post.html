@@ -25,32 +25,53 @@
 
 
 					<div class="project-meta">
+
+						{% if page.files %}
+
+							{% for file in page.files %}
+								<span class="h2">File</span>
+								<p class="rouge-first">
+									<a href="{{ file.url }}" target="_blank" rel="nofollow">{{ file.title }}</a> <br/>
+								</p>
+							{% endfor %}
+					  {% endif %}
+
 						<!-- <button class="button-4"> View Fullscreen  </button> -->
-						{% if page.project.tech %}
-						<span class="h2">Technologies</span>
-						<p>{{ page.project.tech }}</p>
-						{% endif %}
-						{% if page.code %}
-						<span class="h2">Code</span>
-						<p class="rouge-first"><a title="{{ page.code.title }}" href="{{ page.code.url }}" target="_blank" rel="nofollow">{{ page.code.title }}</a></p>
+						{% if page.project.license %}
+							<span class="h2">License</span>
+							<p class="rouge-first"><a href="{{ page.project.license-url }}">{{ page.project.license }}</a></p>
 						{% endif %}
 
+						{% if page.code %}
+							<span class="h2">Code</span>
+							<p class="rouge-first"><a title="{{ page.code.title }}" href="{{ page.code.url }}" target="_blank" rel="nofollow">{{ page.code.title }}</a></p>
+						{% endif %}
+
+						<!-- {% if page.project.tech %}
+							<span class="h2">Technologies</span>
+							<p>{{ page.project.tech }}</p>
+						{% endif %} -->
+
 						{% if page.project.year %}
-						<span class="h2">Year</span>
-						<p>{{ page.project.year }}</p>
+							<span class="h2">Year</span>
+							<p>{{ page.project.year }}</p>
 						{% endif %}
 
 						{% if page.sources %}
-						<span class="h2">Sources</span>
-						<!-- <ul> -->
-						{% for source in page.sources %}
-						<!-- <li> -->
-						<p class="rouge-first">
-							<a href="{{ source.url }}" target="_blank" rel="nofollow">{{ source.title }}</a>
-						</p>
-						<!-- </li> -->
-						{% endfor %}
-						<!-- </ul> -->
+							<span class="h2">Sources</span>
+							{% if page.project.license-comment %}
+								<p>{{ page.project..license-comment }}</p>
+								<br/>
+							{% endif %}
+							<!-- <ul> -->
+							{% for source in page.sources %}
+								<!-- <li> -->
+								<p class="rouge-first">
+									<a href="{{ source.url }}" target="_blank" rel="nofollow">{{ source.title }}</a> <br/> <div style="margin-left: 1em; "> by {{ source.author }} <br/> {{ source.license }}</div>
+								</p>
+									<!-- </li> -->
+							{% endfor %}
+							<!-- </ul> -->
 						{% endif %}
 
 					</div>
@@ -83,8 +104,8 @@
 			<div class="container">
 
 				{% if page.next.url %}
-				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="prev">
-					<span class="h2">Next</span>
+				<a title="Previous {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="prev">
+					<span class="h2">Previous</span>
 					<h2>{{ page.next.project.title }}</h2>
 				</a>
 				{% else %}
@@ -92,8 +113,8 @@
 				{% endif %}
 
 				{% if page.previous.url %}
-				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="next">
-					<span class="h2">Previous</span>
+				<a title="Next {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="next">
+					<span class="h2">Next</span>
 					<h2>{{ page.previous.project.title }}</h2>
 				</a>
 				{% else %}
