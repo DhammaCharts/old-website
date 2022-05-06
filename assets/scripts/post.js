@@ -27,9 +27,15 @@
 
 	// sr.reveal('.project li');
 	sr.reveal('.project img');
+
+	const article = $("article");
+	const height = article.offsetHeight;
+	$(".container").css("min-height", height);
 }(jQuery));
 
-const article = document.getElementByTagName('article');
-const height = article.offsetHeight;
+// debugs the problem when height of article is too long (longer than image)
 
-document.getElementById(".container").style.minHeight = height;
+// const article = document.getElementByTagName("article");
+// const height = article.offsetHeight;
+//
+// document.getElementById(".container").style.minHeight = height;
