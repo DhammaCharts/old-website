@@ -28,9 +28,9 @@
 	// sr.reveal('.project li');
 	sr.reveal('.project img');
 
-	const article = $("article");
-	const height = article.height();
-	$(".container").css("min-height", height);
+	// const article = $("article");
+	// const height = article.height();
+	// $(".container").css("min-height", height);
 }(jQuery));
 
 // debugs the problem when height of article is too long (longer than image)
