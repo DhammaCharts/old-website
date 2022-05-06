@@ -29,7 +29,7 @@
 	sr.reveal('.project img');
 
 	const article = $("article");
-	const height = article.offsetHeight;
+	const height = article.height();
 	$(".container").css("min-height", height);
 }(jQuery));
 
