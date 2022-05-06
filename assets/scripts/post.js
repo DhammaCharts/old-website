@@ -28,3 +28,8 @@
 	// sr.reveal('.project li');
 	sr.reveal('.project img');
 }(jQuery));
+
+const article = document.getElementByTagName('article');
+const height = article.offsetHeight;
+
+document.getElementById(".container").style.minHeight = height;
