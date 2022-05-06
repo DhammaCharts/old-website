@@ -23,7 +23,7 @@ code:
   url: "https://observablehq.com/@7722371e7ecac8bd/suttapitaka"
 
 files:
-  - title : PNG Coming soon
+  - title : PNG Coming soon (recommended size A0)
     url :
 
 sources :

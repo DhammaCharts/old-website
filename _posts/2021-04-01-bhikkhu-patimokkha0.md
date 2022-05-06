@@ -24,7 +24,7 @@ code:
   url: https://observablehq.com/@7722371e7ecac8bd/bhikkhu-patimokkha
 
 files:
-  - title : PNG Coming soon
+  - title : PNG Coming soon (recommended size A1)
     url :
 
 sources :
