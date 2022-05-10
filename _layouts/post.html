@@ -59,22 +59,20 @@
 
 						{% if page.sources %}
 							<span class="h2">Sources</span>
-							{% if page.project.license-comment %}
-								<p>{{ page.project.license-comment }}</p>
-								<br/>
-							{% endif %}
-							<!-- <ul> -->
+
 							{% for source in page.sources %}
-								<!-- <li> -->
 								<p class="rouge-first">
 									<a href="{{ source.url }}" target="_blank" rel="nofollow">{{ source.title }}</a>
 								</p>
 								<p style="margin-left: 1em; ">
 									by {{ source.author }} </br> {{ source.license }}
 								</p>
-									<!-- </li> -->
 							{% endfor %}
-							<!-- </ul> -->
+							<br/>
+							{% if page.project.license-comment %}
+								<p>{{ page.project.license-comment }}</p>
+
+							{% endif %}
 						{% endif %}
 
 					</div>

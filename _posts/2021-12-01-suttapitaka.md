@@ -19,11 +19,11 @@ project:
   license-url : https://creativecommons.org/publicdomain/zero/1.0/
 
 code:
-  title: "ObservableHQ"
+  title: "D3.js"
   url: "https://observablehq.com/@7722371e7ecac8bd/suttapitaka"
 
 files:
-  - title : PNG Coming soon (recommended size A0)
+  - title : Coming soon
     url :
 
 sources :
