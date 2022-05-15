@@ -8,7 +8,7 @@ title: Upload
 <br>
 
 
-Please send an email to <img style = "display: inline;  vertical-align: middle;" src="{{ "/assets/images/icons/mail4.png" | prepend: site.baseurl }}"> with the following informations :
+Please send an email to <img style = "display: inline;  vertical-align: middle;" src="{{ "/assets/images/icons/mail4.png" | prepend: site.baseurl }}"> or via the [Discord Serveur](https://discord.gg/MkyKZh8ANy) with the following informations :
 
 <br>
 
