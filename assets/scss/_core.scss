@@ -507,3 +507,18 @@ a.bigger {
     // position: absolute;
     // background: rgba(0, 0, 0, 0.4);
 }
+
+.foot {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+  max-width: 70em;
+  padding: 0 3rem;
+
+
+	@media (min-width: $breakpoint-medium) {
+		flex-direction: row;
+		gap : 30%;
+
+	}
+}
