@@ -14,11 +14,12 @@ Please send an email to <img style = "display: inline;  vertical-align: middle;"
 
 <div style="margin-left : 3rem">
 - Title<br>
+- Type <br>
 - Small description<br>
 - Hight resolution chart image<br>
 - Technology used<br>
 - Source code or file if any<br>
-- License<br>
+- License (url)<br>
 - Year<br>
-- Sources
+- Sources (title, url, author, license)
 </div>
