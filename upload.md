@@ -16,6 +16,7 @@ Please send an email to <img style = "display: inline;  vertical-align: middle;"
 - Title<br>
 - Type <br>
 - Small description<br>
+- Author
 - Hight resolution chart image<br>
 - Technology used<br>
 - Source code or file if any<br>
