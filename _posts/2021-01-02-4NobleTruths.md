@@ -36,7 +36,7 @@ images:
   - image:
     url: "/assets/images/charts/4NobleTruths/chart40back-min-1500.jpg"
     alt: "Color"
-    map: "/assets/images/charts/4NobleTruths/chart43.png"
+    map: "/assets/images/charts/4NobleTruths/Chart43.png"
 
 
 
