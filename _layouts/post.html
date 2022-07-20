@@ -26,6 +26,11 @@
 
 					<div class="project-meta">
 
+						{% if page.project.author %}
+							<span class="h2">Author</span>
+							<p>{{ page.project.author }}</p>
+						{% endif %}
+
 						{% if page.files %}
 
 							{% for file in page.files %}
@@ -41,6 +46,8 @@
 							<span class="h2">License</span>
 							<p class="rouge-first"><a href="{{ page.project.license-url }}">{{ page.project.license }}</a></p>
 						{% endif %}
+
+
 
 						{% if page.code %}
 							<span class="h2">Code</span>
