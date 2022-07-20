@@ -7,7 +7,7 @@ category: Radial
 
 
 meta:
-  keywords: "Jekyll, Pineapple"
+  keywords: ""
 
 project:
   title: "Sutta Pitaka"
@@ -17,14 +17,17 @@ project:
   year: "2022"
   license : CC0 Public Domain
   license-url : https://creativecommons.org/publicdomain/zero/1.0/
+  interactive-version : https://www.dhammacharts.org/suttapitaka-chart/
 
 code:
   title: "D3.js"
   url: "https://observablehq.com/@7722371e7ecac8bd/suttapitaka"
 
 files:
-  - title : Coming soon
+  - title : PNG Coming soon
     url :
+  - title : Interactive version
+    url : https://www.dhammacharts.org/suttapitaka-chart/
 
 sources :
   - title : Public GitHub Repo
