@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Static Image</title>
+	<script src="https://cdn.jsdelivr.net/npm/ol@v7.2.2/dist/ol.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.2.2/ol.css">
+
+	<style>
+		.map {
+			width: 100%;
+			height: 100vh;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="map" class="map"></div>
+	<!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+	<script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
+	<script>
+		const ImageLayer = ol.layer.Image;
+		const Map = ol.Map;
+		const Projection = ol.proj.Projection;
+		const Static = ol.source.ImageStatic;
+		const View = ol.View;
+		const { getCenter } = ol.extent;
+
+		// Map views always need a projection.  Here we just want to map image
+		// coordinates directly to map coordinates, so we create a projection that uses
+		// the image extent in pixels.
+		const extent = [0, 0, 1024, 968];
+		const projection = new Projection({
+			code: 'xkcd-image',
+			units: 'pixels',
+			extent: extent,
+		});
+
+		const map = new Map({
+			layers: [
+				new ImageLayer({
+					source: new Static({
+						attributions: '© <a href="https://xkcd.com/license.html">xkcd</a>',
+						url: 'https://imgs.xkcd.com/comics/online_communities.png',
+						projection: projection,
+						imageExtent: extent,
+					}),
+				}),
+			],
+			target: 'map',
+			view: new View({
+				projection: projection,
+				center: getCenter(extent),
+				zoom: 2,
+				maxZoom: 8,
+			}),
+		});
+
+	</script>
+</body>
+
+</html>
