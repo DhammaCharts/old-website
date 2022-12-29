@@ -27,7 +27,6 @@ images:
   - image:
     url: "/assets/images/charts/BuddhasMind/buddhasmind.jpg"
     map: "/assets/images/charts/BuddhasMind/BuddhasMind.png"
-    zoom-max: 1.4
 
 
 

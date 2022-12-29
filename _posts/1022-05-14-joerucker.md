@@ -26,7 +26,6 @@ images:
     url: "/assets/images/charts/joerucker/joerucker2.png"
     alt: "DO chart"
     map: "/assets/images/charts/joerucker/joerucker2.png"
-    zoom-max : 1
 
 
 ---
