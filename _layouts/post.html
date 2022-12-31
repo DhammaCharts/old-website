@@ -111,10 +111,19 @@
 								</a>
 							</div>
 							{% elsif image.link %}
-							<a href='{{ image.link }}'>
-								<img class="load-hidden" src="{{ image.url | prepend: site.baseurl }}"
-									alt="{{ image.alt }}" />
-							</a>
+							<div style="position: relative; top: 0; left: 0;">
+								<a style="position: relative; top: 0; left: 0;" 
+								href='{{ image.link }}'>
+									<img class="load-hidden" src="{{ image.url | prepend: site.baseurl }}"
+										alt="{{ image.alt }}" />
+								</a>
+								<a style="position: absolute; top: 0; right: 0;" 
+								href='{{ image.link }}'>
+									<img class="load-hidden" style="width:20px"
+										src="{{ '/assets/images/icons/fullscreen.png' | prepend: site.baseurl }}"
+										alt="{{ image.alt }}" />
+								</a>
+							</div>
 							{% else %}
 							<a href="{{ image.url | prepend: site.baseurl }}">
 								<img class="load-hidden" src="{{ image.url | prepend: site.baseurl }}"
