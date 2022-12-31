@@ -10,16 +10,20 @@ meta:
   keywords: ""
 
 project:
-  title: "Core Topics of Buddhism"
-  logo: "assets/images/charts/joerucker/joerucker.png"
-  tech: "?"
-  year: "?"
-  license : For free distribution only
-
+  title: Core Topics of Buddhism
+  author: Joe Rucker
+  type: Hierarchical
+  logo: "assets/images/charts/joerucker/joeruckermini.jpg"
+  tech: Adobe Illustrator / PDF
+  year: Original version 1 in 2012, current version is 2022
+  license: CC BY-NC-ND 4.0 (For free distribution only)
+  license-url: https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 files:
-  - title : Coming soon
-    url :
+  - title : PDF
+    url : "/assets/images/charts/joerucker/joeruckerPDF.pdf"
+  - title : PNG
+    url : "/assets/images/charts/joerucker/joerucker2.png"
 
 images:
   - image:
@@ -29,4 +33,4 @@ images:
 
 
 ---
-Description needed
+All the core topics of Buddhsim organiszed in a tree starting from the 3 Jewels.
