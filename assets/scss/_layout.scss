@@ -291,6 +291,79 @@
 		margin: 1rem 0 .5rem;
 	}
 }
+.masonry-item {
+  // color: #111111;
+  // background-color: #f9f9f9;
+	// margin: 0 0 3em;
+  // width: 100%;
+
+	// @media (min-width: $breakpoint-small) {
+	// 	a {
+	// 		padding: 0 1.5rem;
+	// 	}
+	// }
+
+
+	a {
+		display: block;
+
+		&:hover {
+			.img-wrapper {
+				&:before {
+					opacity: 1;
+				}
+				&:after {
+					opacity: .45;
+				}
+			}
+		}
+	}
+
+	.img-wrapper {
+		position: relative;
+
+		&:before {
+			content: "View Chart";
+			color: $color-white;
+			@extend .h2;
+			font-weight: 800;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -.5rem;
+			margin-left: -4.4rem;
+			opacity: 0;
+			-webkit-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+				-webkit-transition-delay: .25s;
+				transition-delay: .25s;
+				z-index: 2;
+		}
+
+		&:after {
+			background: #000;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			-webkit-transition: all .5s ease-in-out;
+				transition: all .5s ease-in-out;
+				z-index: 1;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	span {
+		margin: 1rem 0 .5rem;
+	}
+}
 .masonry-title, .masonry-description {
   margin: 0;
 }

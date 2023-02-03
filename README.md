@@ -14,4 +14,7 @@ Using the [Pinaple](https://github.com/DhammaCharts/pineapple) template
 - Update charts page
     - links to image, fullscreen, etc.
 - change email image
+- Fix high res files, SVG etc.
+- Dix sources links
+
 
