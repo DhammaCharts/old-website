@@ -15,10 +15,6 @@ project:
   logo: "assets/images/charts/4NobleTruths/chart40-min-1500.jpg"
   tech: "Inkscape"
 
-code:
-  title: "SVG"
-  url: "https://github.com/arnolds/pineapple"
-  year: "2021"
 
 file:
   title:
@@ -42,4 +38,4 @@ images:
 
 ---
 
-This chart is still in progress and contains many errors. It represent the major concepts of Early Buddhist Texts.
+This chart is still in progress and contains many errors. It represent the major concepts of Early Buddhist Texts. The current working version can be view [here](https://observablehq.com/d/3915c29fed00300c).
