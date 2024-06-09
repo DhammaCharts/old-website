@@ -17,7 +17,7 @@ email: "dhammacharts@protonmail.com"
 # github: "https://github.com/"
 
 # Site config
-baseurl: ""
+baseurl: "dhammacharts.org/"
 highlighter: rouge
 sass:
   sass_dir: assets/scss

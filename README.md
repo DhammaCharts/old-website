@@ -17,4 +17,10 @@ Using the [Pinaple](https://github.com/DhammaCharts/pineapple) template
 - Fix high res files, SVG etc.
 - Div sources links
 
+## intstall 
 
+Pineaple Jekyll temaplte for this website
+
+Run: `jekyll serve` no need to `bundle install` or `bundle exec jekyll serve` on this repo.
+
+Change `baseurl` in `_confilg.yml` to: `` if it is the root folder for the website.
